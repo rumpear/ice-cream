@@ -1,0 +1,134 @@
+<header class="header">
+  <div class="container container-header">
+    <h2 class="visually-hidden">Header</h2>
+    <div class="container-navigation">
+       <nav class="header-navigation">
+      <a href="" class="header-logo">
+        <img src="./images/header/icecream-logo.png" alt="logo" />
+      </a>
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a class="navigation__link link current-page" href="./index.html">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#gallery">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#how-its-made">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#products">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+     <div class="sub-navigation">
+    <button
+      type="button"
+      class="button-menu js-open-menu "
+      aria-expanded="false"
+      aria-controls="mob-menu">
+      <svg width="35" height="35" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header-button" buy-modal-open>
+
+      <span class="header-button__text">Buy now</span>
+
+      <svg class="mob-icon">
+        <use href="./images/header/sprite-header.svg#icon-vector"></use>
+      </svg>
+    </button>
+     </div> 
+  </div>
+  </div>
+  <div class="mob-menu js-menu-container" id="mob-menu">
+    <div class="mob-menu__content">
+      <div class="button-position">
+        <button type="button" class="button-mob-icon" >
+          Buy now
+          <svg class="mob-icon">
+            <use href="./images/header/sprite-header.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="mob-menu-nav__list list">
+        <li class="mob-menu-nav__item">
+          <a class="mob-menu-nav__link link current-page" href="./index.html">Home</a>
+        </li>
+        <li class="mob-menu-nav__item">
+          <a class="mob-menu-nav__link link" href="#gallery">About us</a>
+        </li>
+        <li class="mob-menu-nav__item">
+          <a class="mob-menu-nav__link link" href="#how-its-made">How it’s made?</a>
+        </li>
+        <li class="mob-menu-nav__item">
+          <a class="mob-menu-nav__link link" href="#products">Our products</a>
+        </li>
+        <li class="mob-menu-nav__item">
+          <a class="mob-menu-nav__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="button-menu-close js-close-menu">
+      <svg class="icon-cross" width="14" height="14" aria-label="Переключатель мобильного меню">
+        <use href="./images/sprite.svg#about-cros"></use>
+      </svg>
+    </button>
+  </div>
+
+</header>
+
+<div class="overlay buy-is-hidden" buy-modal>
+  
+  <div class="modal-buy">
+    
+    <p class="buy-modal-title">Checkout</p>
+     <form action="#" class="buy-modal-form">
+        <div class="buy-modal-field">
+          <label for="user-name" class="buy-input-lable">Name</label>
+          <input type="text" name="user-name" id="user-name" class="buy-modal-input">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-tel" class="buy-input-lable">Telephone</label>
+          <input type="tel" name="user-tel" id="user-tel" class="buy-modal-input">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-email" class="buy-input-lable">Email</label>
+          <input type="email" name="user-email" id="user-email" class="buy-modal-input">
+        </div>
+        
+        <div class="buy-modal-field">
+          <label for="user-text" class="buy-input-lable">Your comment</label>
+        <textarea name="user-text" id="user-text" class="buy-modal-comit" placeholder="Coments"></textarea>
+        </div>
+        <p class="buy-modal-title">Product selection</p>
+        <div class="buy-modal-field">
+          <label for="user-name-prod" class="buy-input-lable">What products do you want</label>
+          <input type="text" name="user-name-prod" id="user-name-prod" class="buy-modal-input" placeholder="ice-cream, milk-shake, cofe...">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-text-city" class="buy-input-lable">City</label>
+          <input type="text" name="user-text-city" id="user-text-city" class="buy-modal-input">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-text-adr" class="buy-input-lable">Address</label>
+          <input type="text" name="user-text-adr" id="user-text-adr" class="buy-modal-input">
+        </div>
+        <button type="submit" class="buy-modal-btn">Click and BUY :)</button>
+        <button type="button" class="close-modal-buy" buy-modal-close>
+          <svg class="close-but-modal-buy">
+              <use href="./images/modal-buy.svg#icon-buton-for-close"></use>
+          </svg>
+          </button>
+        </form>  
+  </div>
+
+</div>
+
+
+

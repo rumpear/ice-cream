@@ -1,0 +1,630 @@
+.hero {
+  background-color: $hero-bgr;
+}
+.container.hero {
+  position: relative;
+  height: 502px;
+  background-color: $hero-bgr;
+  overflow: hidden;
+  @media screen and (min-width: $tablet) {
+    height: 399px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 665px;
+  }
+}
+.hero-text-thumb {
+  position: absolute;
+  margin-top: 193px;
+  padding: 0;
+  z-index: 2;
+  @media screen and (min-width: $tablet) {
+    margin-top: 102px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 171px;
+  }
+}
+.hero-text {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: (30 / 26 * 100%);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $hero-text;
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: (25 / 22 * 100%);
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 38px;
+    line-height: (38 / 44 * 100%);
+  }
+}
+.hero-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 0.96;
+  text-transform: uppercase;
+  color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: (31 / 34 * 100%);
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: (58 / 52 * 100%);
+  }
+}
+.hero-btn-list {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 25px;
+  }
+}
+.hero-btn {
+  padding: 0;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  height: 24px;
+  overflow: hidden;
+}
+.hero-btn-item-one {
+  @extend .hero-btn;
+  width: 63px;
+  margin-right: 8px;
+  background-color: $accent-color;
+  &:hover .hero-btn-link,
+  &:focus .hero-btn-link {
+    color: $accent-color;
+    background-color: white;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 102px;
+    height: 40px;
+  }
+}
+.hero-btn-item-two {
+  @extend .hero-btn;
+  width: 82.8px;
+  background-color: $hero-text;
+  & .hero-btn-link {
+    color: $accent-color;
+  }
+  &:hover .hero-btn-link,
+  &:focus .hero-btn-link {
+    color: white;
+    background-color: $accent-color;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 138px;
+    height: 40px;
+  }
+}
+.hero-btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 8px;
+  line-height: 1.25;
+  color: white;
+  overflow: hidden;
+
+  transition: all 250ms ease-in;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: (14 / 18 * 100%);
+  }
+}
+.hero-img {
+  @media screen and (min-width: $tablet) {
+    max-width: 143px;
+    height: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 236px;
+    height: 100%;
+  }
+}
+.hero-img-two {
+  display: block;
+  max-width: 171px;
+  height: 100%;
+  margin-left: 77px;
+  fill: transparent;
+  z-index: 1;
+  @media screen and (min-width: $tablet) {
+    max-width: 143px;
+    height: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 236px;
+    height: 100%;
+  }
+}
+.hero-circle {
+  position: absolute;
+  display: block;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $rosy-text-color;
+  margin-top: 83px;
+  margin-left: 16px;
+  z-index: 0;
+  @media screen and (min-width: $mobile) {
+    margin-top: 70px;
+    width: 324px;
+    height: 324px;
+    animation-name: pink-circle-f1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width: $mobile) {
+    animation-name: pink-circle-f2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 31px;
+    margin-left: 183px;
+    width: 324px;
+    height: 324px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 52px;
+    margin-left: 360px;
+    width: 538px;
+    height: 538px;
+  }
+}
+.hero-img-composition_two {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 0;
+  margin-left: 16px;
+  z-index: 1;
+  @media screen and (min-width: $mobile) {
+    margin-top: 31px;
+    // margin-left: 115px;
+    animation-name: ice-cream-f1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width: $mobile) {
+    animation-name: ice-cream-f2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 63px;
+    margin-left: 181px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 108px;
+    margin-left: 404px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.hero-img-composition {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: -12px;
+  left: 594px;
+}
+.hero-img-composition__circle {
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  top: 50px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+
+  z-index: 2;
+
+  background-color: rgba(199, 19, 62, 0.2);
+  transition: background-color 500ms cubic-bezier(0.45, 0, 0.55, 1);
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  &:hover {
+    background-color: rgba(199, 19, 62, 0.6);
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-color;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+
+    opacity: 0.4;
+  }
+  &::before {
+    animation: pulse 10s ease-out infinite;
+  }
+  &::after {
+    animation: pulse 10s ease-out infinite;
+  }
+  @keyframes pulse {
+    20%,
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+}
+.partone {
+  position: absolute;
+  top: -358px;
+  left: -16px;
+  overflow: hidden;
+  z-index: 6;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-1000px);
+  }
+  animation: fall-one 2.3s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-one {
+    0% {
+      top: -1000px;
+    }
+    100% {
+      top: -358px;
+    }
+  }
+}
+.parttwo {
+  position: absolute;
+  top: -276px;
+  left: -20px;
+  z-index: 5;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-900px);
+  }
+  animation: fall-two 2.1s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-two {
+    0% {
+      top: -900px;
+    }
+    100% {
+      top: -276px;
+    }
+  }
+}
+.partthree {
+  position: absolute;
+  top: -202px;
+  left: -19px;
+  pointer-events: none;
+  z-index: 4;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-800px);
+  }
+  animation: fall-three 1.7s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-three {
+    0% {
+      top: -800px;
+    }
+    100% {
+      top: -202px;
+    }
+  }
+}
+.partfour {
+  position: absolute;
+  top: -147px;
+  left: -16px;
+  pointer-events: none;
+  z-index: 3;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-700px);
+  }
+  animation: fall-four 1.3s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-four {
+    0% {
+      top: -700px;
+    }
+    100% {
+      top: -147px;
+    }
+  }
+}
+.partfive {
+  @extend .partfour;
+  top: -102px;
+  left: -22px;
+  pointer-events: none;
+  z-index: 2;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-600px);
+  }
+  animation: fall-five 1s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-five {
+    0% {
+      top: -600px;
+    }
+    100% {
+      top: -102px;
+    }
+  }
+}
+.partsix {
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+
+  transition: opacity 500ms ease-in-out;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+@keyframes pink-circle-f1 {
+  0% {
+    left: 16px;
+  }
+  100% {
+    left: 120px;
+  }
+}
+@keyframes pink-circle-f2 {
+  0% {
+    left: 120px;
+  }
+  100% {
+    left: 16px;
+  }
+}
+@keyframes ice-cream-f1 {
+  0% {
+    left: 16px;
+  }
+  100% {
+    left: 115px;
+  }
+}
+@keyframes ice-cream-f2 {
+  0% {
+    left: 115px;
+  }
+  100% {
+    left: 16px;
+  }
+}
+.hero-milk-text {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  position: absolute;
+  width: 114px;
+  height: auto;
+  margin-top: 292px;
+  margin-left: 120px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 485px;
+    margin-left: 180px;
+    width: 200px;
+    height: auto;
+  }
+}
+.milk-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $hero-text;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.42;
+  }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
+  }
+}
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border: transparent;
+  border-radius: 50%;
+  background-color: $hero-text;
+  margin-top: 7px;
+  cursor: pointer;
+  .hero-button-arrow {
+    fill: $accent-color;
+    z-index: 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    .hero-button-arrow {
+      padding: 3px;
+    }
+  }
+}
+.milk-capasity {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  position: absolute;
+  bottom: 28px;
+  @media screen and (min-width: $desktop) {
+    bottom: 45px;
+    margin-left: -38px;
+  }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
+  }
+}
+.hero-lady {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 72px;
+  }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
+  }
+}
+.hero-numbers {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  position: absolute;
+  top: 94px;
+  right: 34px;
+  @media screen and (min-width: $desktop) {
+    right: 97px;
+  }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
+  }
+}
+
+.hero-numbers-list {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+}
+.hero-numbers-item {
+  display: inline-grid;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: $accent-color;
+  z-index: 1;
+  &:nth-child(2) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+.hero-numbers-item-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: $hero-text;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 2.28;
+  }
+}
+
+.circles-thumb {
+  position: absolute;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    top: 139px;
+    right: 89px;
+  }
+  position: absolute;
+  @media screen and (min-width: $desktop) {
+    top: 175px;
+    right: 192px;
+  }
+}
+.hero-numbers-circle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: transparent;
+  border-radius: 50%;
+  background-color: $hero-text;
+  transform: translate(300%, -232%);
+  @media screen and (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+    transform: translate(265%, -251%);
+  }
+}
+.hero-numbers-circle-t {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: transparent;
+  border-radius: 50%;
+  background-color: $hero-text;
+  transform: translate(289%, 119%);
+  @media screen and (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+    transform: translate(267%, 82%);
+  }
+}
