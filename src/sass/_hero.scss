@@ -504,11 +504,11 @@
     bottom: 45px;
     margin-left: -38px;
   }
-  &:hover,
-  &:focus {
-    animation: wobble;
-    animation-duration: 2s;
-  }
+  // &:hover,
+  // &:focus {
+  //   animation: wobble;
+  //   animation-duration: 2s;
+  // }
 }
 .hero-lady {
   @media screen and (max-width: $tablet) {
@@ -520,11 +520,11 @@
   @media screen and (min-width: $desktop) {
     margin-right: 72px;
   }
-  &:hover,
-  &:focus {
-    animation: wobble;
-    animation-duration: 2s;
-  }
+  // &:hover,
+  // &:focus {
+  //   animation: wobble;
+  //   animation-duration: 2s;
+  // }
 }
 .hero-numbers {
   @media screen and (max-width: $tablet) {
@@ -536,11 +536,11 @@
   @media screen and (min-width: $desktop) {
     right: 97px;
   }
-  &:hover,
-  &:focus {
-    animation: wobble;
-    animation-duration: 2s;
-  }
+  // &:hover,
+  // &:focus {
+  //   animation: wobble;
+  //   animation-duration: 2s;
+  // }
 }
 
 .hero-numbers-list {
