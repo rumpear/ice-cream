@@ -460,11 +460,11 @@
     font-size: 14px;
     line-height: 1.42;
   }
-  &:hover,
-  &:focus {
-    animation: wobble;
-    animation-duration: 2s;
-  }
+  // &:hover,
+  // &:focus {
+  //   animation: wobble;
+  //   animation-duration: 2s;
+  // }
 }
 .hero-button {
   display: flex;
